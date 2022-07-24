@@ -1,0 +1,161 @@
+.container {
+    display: grid;
+    background-color: rgb(57, 57, 194);
+    grid-template-columns: auto auto;
+}
+
+.logo {
+    color: white;
+    text-align: left;
+    padding: 25px;
+}
+
+.container1 {
+    display: flex;
+    justify-content: right;
+}
+
+.container1>div {
+    color: white;
+    text-align: right;
+    padding: 25px;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    font-size: 170%;
+    font-weight: bold;
+    font-family: sans-serif;
+
+}
+
+.titulo2 {
+    display: flex;
+    justify-content: center;
+    font-size: 170%;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 60px;
+}
+
+img {
+    width: 200px;
+    height: 140px;
+}
+
+.nomes {
+    text-align: center;
+}
+
+.goku {
+    height: 50px;
+}
+.jedi {
+    height: 50px;
+}
+.papa {
+    height: 50px;
+}
+
+.container2 {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.container3 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    height: 450px;
+    width: auto;
+    padding-left: 100px ;
+    padding-right: 100px;
+    justify-content: space-evenly;
+}
+
+.boxname1 {
+    display: grid;
+    align-items: center;
+    padding: 20px;
+}
+
+.boxname2 {
+    display: grid;
+    align-items: center;
+    padding: 20px;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10vh 10vh 10vh;
+}
+.container2 > div > img {
+    display: block;
+    margin: 0 auto;
+} 
+
+.box1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.wid {
+    width: 200px;
+    display: grid;
+    justify-content: space-evenly;
+}
+
+.containerGrid2 {
+    display: flex;
+    justify-content: right;
+}
+
+.containerGrid2>div {
+    padding: 70px;
+}
+
+.containerGrid2>div>p {
+    font-size: 130%;
+    font-weight: bold;
+}
+
+.caixa {
+    text-align: center;
+}
+
+.containerGrid3 {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.containerGrid3>.boxGrid3_1 {
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.containerGrid3>.boxGrid3_2 {
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.containerGrid3>.boxGrid3_3 {
+    display: grid;
+    grid-column: 2;
+}
+
+.containerGrid3>div>p {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    opacity: 60%;
+    margin-top: -37px;
+    width: 300px;
+    margin-left: -60px;
+}
+
