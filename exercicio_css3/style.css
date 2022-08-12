@@ -1,0 +1,137 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body > header {
+    background: rgb(4 109 213);
+    padding-left: 15px;
+    padding-bottom: 20px;
+}
+
+body > header a {
+    color: white;
+    text-decoration: none;
+}
+
+body > header h1 {
+    font-size: 1.7rem;
+    padding-top: 20px;
+    margin: 0;
+}
+
+body > header h2 {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+body > header #signup {
+    font-size: 0.8rem;
+}
+
+body > header #signup a:nth-child(1) {
+    padding-right: 5px;
+    border-right: 1px solid white;
+}
+
+body > nav > ul > li > a{
+    text-decoration: none;
+}
+
+body > nav > ul > li {
+    text-align: center;
+}
+
+body > nav > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body > nav #hamburger,  body > nav .hamburger{
+    display: none;
+}
+
+body > nav > ul > :nth-child(1){
+    padding: 15px;
+    background-color: transparent;
+    border-top: 5px solid red;
+}
+
+body > nav > ul > :nth-child(2){
+    padding: 15px;
+    background-color: transparent;
+    border-top: 5px solid #8aba56;
+}
+
+body > nav > ul > :nth-child(3){
+    padding: 15px;
+    background-color: transparent;
+    border-top: 5px solid #5b4282;
+}
+
+body > nav > ul > :nth-child(4){
+    padding: 15px;
+    background-color: transparent;
+    border-top: 5px solid #ff8932;
+}
+
+body > nav > ul > :nth-child(5){
+    padding: 15px;
+    background-color: transparent;
+    border-top: 5px solid #19b6e9;
+}
+
+body > nav > ul > :nth-child(6){
+    padding: 15px;
+    background-color: transparent;
+    border-top: 5px solid #e84c8b;
+}
+
+body > aside {
+    background-color: #2a2f33;
+    color: #f9f9f9;
+    padding: 15px;
+}
+
+body > aside > article > h1 > a {
+    color: #f9f9f9;
+    text-decoration: none;
+}
+
+body > #news > article > header {
+    width: 240px;
+    padding-left: 25px;
+    line-height: 30px;
+}
+
+body > #news > article > header > h1 > a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 5px 5px 8px black;
+    font-size: 22px;
+}
+
+body > #news > article > header{
+    position: absolute;
+}
+
+body > #news > article > img {
+    margin-top: -20px;
+}
+
+body > #news > article > p {
+    padding-right: 15px;
+    padding-left: 15px;
+    display: block;
+}
+
+body > #news > article > p:first-of-type:first-letter {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
