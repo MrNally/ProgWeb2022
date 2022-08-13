@@ -1,26 +1,57 @@
 1- Defina o que é HTML e qual é sua relação com XML e SGML.
     HTML (HyperText Markup Language), XML e SGML são linguagens de marcação.
+    
 2- Sobre Marketing Digital:
  Qual o tipo de consumidor atual e como atingi-los pela Internet?
     Usuários de internet. Podem ser atingidos por propagandas e anuncios em canais de streaming, redes sociais etc.
+    
  Qual é a importância de apresentar sua empresa utilizando a Internet?
     Alcançar mais clientes, adentrando no mercado, e tornando a marca conhecida.
+    
  Como organizar o conteúdo do site da empresa?
     Utilizando estilos, deixando o site interessante e atrativo para o público alvo.
+    
 2- Qual a diferença da Web 3.0 para as Web anteriores?
+    Web 2.0 foi o criador e difusor da portabilidade e alcance da internet para o maior número de pessoas, mas ainda existem grupos controlando e manipulando o ambiente.     A principal diferença para a Web 3.0 é que esta consolida a mobilidade, mas com maior controle sobre privacidade, por parte do usuário, e menor controle de grupos ou     autoridades ao reduzir o uso de intermediários para interações.
+    
 3- Quais as vantagens e desvantagens os padrões da Web definidos pela W3C?
 4- Defina e explique de forma sucinta os seguintes itens:
  IP;
+ Endereço IP significa “endereço do Protocolo de Internet”. O Protocolo de Internet é um conjunto de regras para comunicação pela internet para envio de e-mail, streaming  de vídeo ou conexão a um site. 
+ 
  HTTP;
+ Para começar, HTTP (HyperTextTransferProtocol), em português, significa Protocolo de Transferência de Hipertexto. Trata-se de um meio de comunicação de sistemas que permite a transferência de dados entre servidores e computadores na internet.
+ 
  Cookies (web);
+ Cookies são pedaços de código que dão a um site uma espécie de memória de curto prazo, permitindo que ele se lembre de pequenos pedaços de sua informação de navegação, como suas informações de login e preferências de navegação, para oferecer a você uma experiência mais personalizada
+ 
 6- Pesquise e crie um quadro com as principais diferenças entre HTML e HTML5.
+    Ao contrário das versões antigas do HTML, que permitiam criar principalmente sites estáticos que precisavam ser apimentados com CSS e JavaScript, o HTML5 é muito mais dinâmico e inclui elementos multimídia. Ele suporta nativamente vídeo e áudio, e você pode até mesmo fazer jogos ou animações com ele.
+
 7- O que são e como podem ser utilizados os IFrames em um HTML?
+    O iframe é um elemento HTML muito poderoso. Através da tag <iframe>, é possível incluir vídeos, imagens e conteúdos de outras páginas. Também é muito utilizado para incorporar elementos de publicidade na página. Ele pode integrar o conteúdo em qualquer parte do seu layout, sem interferir na estrutura do seu site
+
 8- Sobre CSS3 (responda com exemplos):
  O que é?
+    CSS3 é a terceira mais nova versão das famosas Cascading Style Sheets (ou simplesmente CSS), pela qual se define estilos para um projeto web (página de internet).
+
  Como escrever um estilo para um ID?
+    Use o atributo id em um elemento para atribuir um ID a esse elemento. O nome do ID é de sua escolha e ele deve ser único no documento. Use o atributo class em um elemento para atribuir o elemento a uma determinada classe.
+
  Como escrever um estilo para uma classe?
+    Usando o atributo "class", por exemplo: <div class="blue"></div>
+
  Como escrever um estilo para uma tag dentro de uma classe?
+    Podemos selecionar com ainda mais especificidade, escrevendo mais elementos, como: div p strong a . Neste exemplo, selecionamos links que estão dentro de tags strong que estão dentro de parágrafos que estão dentro de tags div . Seletor de classe: seleciona elementos com uma classe específica aplicada.
+ 
  Como escrever um estilo para uma tag?
+    Na seção <head> da sua planilha HTML, adicione uma referência para o seu arquivo .css logo depois da tag <title>: <link rel="stylesheet" type="text/css" href="style.css" />
+
  O que é Box Model?
+    O motor de renderização do navegador representa cada elemento como uma caixa retangular, de acordo com o padrão definido pelo CSS conhecido como box model.
+
  O que é Floating?
+    Float é uma propriedade CSS de posicionamento.
+
  O que o Floating muda do desenvolvimento Web atual em relação ao modo antigo (com uso de tabelas na construção do site)?
+    A propriedade float do CSS muda que determina que um elemento deve ser retirado do seu fluxo normal e colocado ao longo do lado direito ou esquerdo do seu containêr, onde textos e elementos em linha irão se posicionar ao seu redor. Um elemento flutuante é um tipo de elemento cujo valor de float é diferente de none.
