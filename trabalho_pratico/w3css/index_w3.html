@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PONTOS TURÍSTICOS ALEGRE</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="cabecalho">
+      <div class="w3-container w3-animate-top">
+        <h1 class="w3-text-black w3-wide" style="text-shadow:1px 1px 0 #444; text-align: center">
+          <b>Pontos Turísticos em Alegre-ES</b>
+        </h1>
+        <div id="painel" class="w3-bar w3-light-grey w3-border w3-padding w3-round-large" style="width: 72%">
+          <a href="#comeco" class="w3-bar-item w3-button w3-mobile w3-grey">Home</a>
+          <a href="#lugar1" class="w3-bar-item w3-button w3-mobile">Igreja</a>
+          <a href="#lugar2" class="w3-bar-item w3-button w3-mobile">Parque</a>
+          <a href="#lugar3" class="w3-bar-item w3-button w3-mobile">Antiga Estação</a>
+          <a href="#lugar4" class="w3-bar-item w3-button w3-mobile">Casarão</a>
+          <a href="#lugar5" class="w3-bar-item w3-button w3-mobile">UFES Alegre</a>
+          <div class="busca">
+            <input type="text" class="w3-bar-item w3-input w3-white w3-mobile" placeholder="Search..">
+            <button class="w3-bar-item w3-button w3-green w3-mobile">Go</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container w3-border">
+      <section class="locais">
+          <article id="lugar1" class="w3-border" style="padding-top: 30px">
+              <h2 style="text-align: center;">Igreja Matriz Nossa Senhora da Penha</h2>
+
+              <div class="w3-content" style="max-width:1200px">
+                <img class="mySlides1 w3-round-xlarge" src="../assets/local_1/igreja1.jpg" alt="Foto Igreja Alegre" title="Igreja Matriz Nossa Senhora da Penha" style="width:100%;max-height: 600px">
+                <img class="mySlides1 w3-round-xlarge" src="../assets/local_1/igreja2.jpg" alt="Foto Igreja Alegre" title="Igreja Matriz Nossa Senhora da Penha" style="width:100%;max-height: 600px;display:none">
+                <img class="mySlides1 w3-round-xlarge" src="../assets/local_1/igreja3.jpg" alt="Foto Igreja Alegre" title="Igreja Matriz Nossa Senhora da Penha" style="width:100%;max-height: 600px;display:none">
+              <img src="">
+                <div class="w3-row-padding w3-section">
+                  <div class="w3-col s4">
+                    <img class="demo w3-opacity w3-hover-opacity-off w3-round-xlarge" src="../assets/local_1/igreja1.jpg" style="width:100%;max-height: 200px;cursor:pointer" onclick="currentDiv1(1)">
+                  </div>
+                  <div class="w3-col s4">
+                    <img class="demo w3-opacity w3-hover-opacity-off w3-round-xlarge" src="../assets/local_1/igreja2.jpg" style="width:100%;max-height: 200px;cursor:pointer" onclick="currentDiv1(2)">
+                  </div>
+                  <div class="w3-col s4">
+                    <img class="demo w3-opacity w3-hover-opacity-off w3-round-xlarge" src="../assets/local_1/igreja3.jpg" style="width:100%;max-height: 200px;cursor:pointer" onclick="currentDiv1(3)">
+                  </div>
+                </div>
+              </div>
+
+              <script>
+                function currentDiv1(n) {
+                  showDivs1(slideIndex = n);
+                }
+                
+                function showDivs1(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides1");
+                  var dots = document.getElementsByClassName("demo");
+                  if (n > x.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = x.length}
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+                  }
+                  x[slideIndex-1].style.display = "block";
+                  dots[slideIndex-1].className += " w3-opacity-off";
+                }
+              </script>
+              
+              <div style="max-width: 1200px; margin: 0 auto;">
+                <p>
+                  A capela Mor de Alegre começou a ser construída em barro e madeira no ano de 1851, por iniciativa dos primeiros exploradores da região. Oficialmente, as terras do patrimônio de Alegre ficaram sobre responsabilidade da igreja com a condição de que esta doaria as terras à Nossa Senhora da Penha. Em 1868 o corpo da igreja foi edificado e a Capela Mor reparada. Novas ampliações foram realizadas entre 1914 e 1916 e também entre 1953 e 1968. Todas essas reformas resultaram num estilo barroco-gótico. A igreja de Nossa Senhora da Penha possui ainda magníficos vitrais retratando a vida de cristo e pinturas do Indiano Diwali.
+                </p>
+                <a href="https://www.instagram.com/senhoradapenha.alegre/" target="_blank">Instagram da Igreja</a>
+              </div>
+              
+          </article>
+
+          <article id="lugar2" class="w3-border" style="padding-top: 30px">
+              <h2 style="text-align: center;">Parque Estadual da Cachoeira da Fumaça</h2>
+
+              <div class="w3-content" style="max-width:1200px">
+                <img class="mySlides2 w3-round-xlarge" src="../assets/local_2/cachoeira1.jpg" alt="Foto Cachoeira Alegre" title="Cachoeira da fumaça Alegre" style="width:100%;max-height: 600px">
+                <img class="mySlides2 w3-round-xlarge" src="../assets/local_2/cachoeira2.jpg" alt="Foto Cachoeira Alegre" title="Cachoeira da fumaça Alegre" style="width:100%;max-height: 600px;display:none">
+                <img class="mySlides2 w3-round-xlarge" src="../assets/local_2/cachoeira3.jpg" alt="Foto Cachoeira Alegre" title="Cachoeira da fumaça Alegre" style="width:100%;max-height: 600px;display:none">
+              
+                <div class="w3-row-padding w3-section">
+                  <div class="w3-col s4">
+                    <img class="demo w3-opacity w3-hover-opacity-off w3-round-xlarge" src="../assets/local_2/cachoeira1.jpg" style="width:100%;max-height: 200px;cursor:pointer" onclick="currentDiv2(1)">
+                  </div>
+                  <div class="w3-col s4">
+                    <img class="demo w3-opacity w3-hover-opacity-off w3-round-xlarge" src="../assets/local_2/cachoeira2.jpg" style="width:100%;max-height: 200px;cursor:pointer" onclick="currentDiv2(2)">
+                  </div>
+                  <div class="w3-col s4">
+                    <img class="demo w3-opacity w3-hover-opacity-off w3-round-xlarge" src="../assets/local_2/cachoeira3.jpg" style="width:100%;max-height: 200px;cursor:pointer" onclick="currentDiv2(3)">
+                  </div>
+                </div>
+              </div>
+
+              <script>
+                function currentDiv2(n) {
+                  showDivs2(slideIndex = n);
+                }
+                
+                function showDivs2(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides2");
+                  var dots = document.getElementsByClassName("demo");
+                  if (n > x.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = x.length}
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+                  }
+                  x[slideIndex-1].style.display = "block";
+                  dots[slideIndex-1].className += " w3-opacity-off";
+                }
+              </script>  
+
+              <div style="max-width: 1200px; margin: 0 auto;">
+                <p>
+                  O Parque Estadual da Cachoeira da Fumaça foi criado através do Decreto nº 2.791-ES (24 de agosto de 1984) e complementado através do Decreto nº 4.568-E (21 de setembro de 1990), quando então o Governo do Estado, atendendo uma demanda dos moradores dos municípios de Alegre, Guaçuí e Castelo e de outros Estados da Federação, desapropriou uma área de 27 ha, coberta basicamente de pastagem, mas que continha em seu interior a cachoeira do rio Braço Norte Direito ou Cachoeira da Fumaça, que atraía milhares de visitantes devido à sua grande beleza cênica.
+                </p>
+                <p>
+                  A sua cobertura original é do tipo Floresta Estacional Semidecidual, que, ao longo dos anos, foi sendo recomposta, com plantios de essências nativas/frutíferas. Apesar de suas dimensões implicarem em uma fauna reduzida, observou-se, com o replantio, o retorno de aves e pássaros como siriema, beija-flor, rolinha, bem-te-vi, gavião, jurutí, dentre outros.
+                </p>	
+                <p>
+                  O rio Braço Norte Direito além de contribuir com a beleza cênica do local, através da Cachoeira da Fumaça com seus 140 metros de queda, é um afluente do rio Itapemirim, abastecendo vários centros urbanos.
+                </p>
+                <a href="https://iema.es.gov.br/PECF" target="_blank">Site Parque Cachoeira da Fumaça</a>
+              </div>
+          </article>
+
+          <article id="lugar3" class="w3-border" style="padding-top: 30px">
+              <h2 style="text-align: center;">Antiga Estação Ferroviária</h2>
+
+              <div class="w3-content" style="max-width:1200px">
+                <img class="mySlides3 w3-round-xlarge" src="../assets/local_3/estacao1.jpg" alt="Foto Estacao Rodoviaria Alegre" title="Antiga Estação Ferroviária" style="width:100%;max-height: 600px">
+                <img class="mySlides3 w3-round-xlarge" src="../assets/local_3/estacao2.jpg" alt="Foto Estacao Rodoviaria Alegre" title="Antiga Estação Ferroviária" style="width:100%;max-height: 600px;display:none">
+                <img class="mySlides3 w3-round-xlarge" src="../assets/local_3/estacao3.jpg" alt="Foto Estacao Rodoviaria Alegre" title="Antiga Estação Ferroviária" style="width:100%;max-height: 600px;display:none">
+              
+                <div class="w3-row-padding w3-section">
+                  <div class="w3-col s4">
+                    <img class="demo w3-opacity w3-hover-opacity-off w3-round-xlarge" src="../assets/local_3/estacao1.jpg" style="width:100%;max-height: 200px;cursor:pointer" onclick="currentDiv3(1)">
+                  </div>
+                  <div class="w3-col s4">
+                    <img class="demo w3-opacity w3-hover-opacity-off w3-round-xlarge" src="../assets/local_3/estacao2.jpg" style="width:100%;max-height: 200px;cursor:pointer" onclick="currentDiv3(2)">
+                  </div>
+                  <div class="w3-col s4">
+                    <img class="demo w3-opacity w3-hover-opacity-off w3-round-xlarge" src="../assets/local_3/estacao3.jpg" style="width:100%;max-height: 200px;cursor:pointer" onclick="currentDiv3(3)">
+                  </div>
+                </div>
+              </div>
+
+              <script>
+                function currentDiv3(n) {
+                  showDivs3(slideIndex = n);
+                }
+                
+                function showDivs3(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides3");
+                  var dots = document.getElementsByClassName("demo");
+                  if (n > x.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = x.length}
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+                  }
+                  x[slideIndex-1].style.display = "block";
+                  dots[slideIndex-1].className += " w3-opacity-off";
+                }
+              </script>  
+
+              <div style="max-width: 1200px; margin: 0 auto;">
+                <p>
+                  A edificação faz parte da história da estrada de ferro que cortava o município de Alegre, transportando passageiros e cargas. Era local de embarque e desembarque, além de ser ponto de encontro de moradores locais.
+                </p>
+                <p>
+                  Traz a inscrição ALEGRE em sua lateral e a cobertura frontal é sustentada por estrutura de ferro, original da construção em torno da década de 1920.
+                </p>
+                <a href="https://goo.gl/maps/ViV71Qy1GfQKB7LC9" target="_blank">Como chegar na Antiga Ferroviária</a>
+              </div>
+          </article>
+
+          <article id="lugar4" class="w3-border" style="padding-top: 30px">
+            <h2 style="text-align: center;">Casarão em Alegre</h2>
+
+            <div class="w3-content" style="max-width:1200px">
+              <img class="mySlides4 w3-round-xlarge" src="../assets/local_4/casarao1.jpg" alt="Foto Casarao Alegre" title="Casarao em Alegre" style="width:100%;max-height: 600px">
+              <img class="mySlides4 w3-round-xlarge" src="../assets/local_4/casarao2.jpg" alt="Foto Casarao Alegre" title="Casarao em Alegre" style="width:100%;max-height: 600px;display:none">
+              <img class="mySlides4 w3-round-xlarge" src="../assets/local_4/casarao3.png" alt="Foto Casarao Alegre" title="Casarao em Alegre" style="width:100%;max-height: 600px;display:none">
+            
+              <div class="w3-row-padding w3-section">
+                <div class="w3-col s4">
+                  <img class="demo w3-opacity w3-hover-opacity-off w3-round-xlarge" src="../assets/local_4/casarao1.jpg" style="width:100%;max-height: 200px;cursor:pointer" onclick="currentDiv4(1)">
+                </div>
+                <div class="w3-col s4">
+                  <img class="demo w3-opacity w3-hover-opacity-off w3-round-xlarge" src="../assets/local_4/casarao2.jpg" style="width:100%;max-height: 200px;cursor:pointer" onclick="currentDiv4(2)">
+                </div>
+                <div class="w3-col s4">
+                  <img class="demo w3-opacity w3-hover-opacity-off w3-round-xlarge" src="../assets/local_4/casarao3.png" style="width:100%;max-height: 200px;cursor:pointer" onclick="currentDiv4(3)">
+                </div>
+              </div>
+            </div>
+
+            <script>
+              function currentDiv4(n) {
+                showDivs4(slideIndex = n);
+              }
+              
+              function showDivs4(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides4");
+                var dots = document.getElementsByClassName("demo");
+                if (n > x.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = x.length}
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+                }
+                x[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " w3-opacity-off";
+              }
+            </script> 
+
+            <div style="max-width: 1200px; margin: 0 auto;">
+              <p>
+                Casarão Sorveteria & Cafeteria oferece Sorvetes e Açaí Premium de alta qualidade, e também Cafés com grãos Especiais do Caparaó!
+              </p>
+              <a href="https://www.instagram.com/casaraosorveteriaecafeteria/" target="_blank">Instagram do Casarão</a>
+            </div>
+          </article>
+
+          <article id="lugar5" class="w3-border" style="padding-top: 30px">
+            <h2 style="text-align: center;">UFES Campus Alegre</h2>
+
+            <div class="w3-content" style="max-width:1200px">
+              <img class="mySlides5 w3-round-xlarge" src="../assets/local_5/ufes1.jpg" alt="Foto Ufes Alegre" title="UFES Campus Alegre" style="width:100%;max-height: 600px">
+              <img class="mySlides5 w3-round-xlarge" src="../assets/local_5/ufes2.jpg" alt="Foto Ufes Alegre" title="UFES Campus Alegre" style="width:100%;max-height: 600px;display:none">
+              <img class="mySlides5 w3-round-xlarge" src="../assets/local_5/ufes3.jpeg" alt="Foto Ufes Alegre" title="UFES Campus Alegre" style="width:100%;max-height: 600px;display:none">
+            
+              <div class="w3-row-padding w3-section">
+                <div class="w3-col s4">
+                  <img class="demo w3-opacity w3-hover-opacity-off w3-round-xlarge" src="../assets/local_5/ufes1.jpg" style="width:100%;max-height: 200px;cursor:pointer" onclick="currentDiv5(1)">
+                </div>
+                <div class="w3-col s4">
+                  <img class="demo w3-opacity w3-hover-opacity-off w3-round-xlarge" src="../assets/local_5/ufes2.jpg" style="width:100%;max-height: 200px;cursor:pointer" onclick="currentDiv5(2)">
+                </div>
+                <div class="w3-col s4">
+                  <img class="demo w3-opacity w3-hover-opacity-off w3-round-xlarge" src="../assets/local_5/ufes3.jpeg" style="width:100%;max-height: 200px;cursor:pointer" onclick="currentDiv5(3)">
+                </div>
+              </div>
+            </div>
+
+            <script>
+              function currentDiv5(n) {
+                showDivs5(slideIndex = n);
+              }
+              
+              function showDivs5(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides5");
+                var dots = document.getElementsByClassName("demo");
+                if (n > x.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = x.length}
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+                }
+                x[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " w3-opacity-off";
+              }
+            </script> 
+
+            <div style="max-width: 1200px; margin: 0 auto;">
+              <p>
+                O Campus de Alegre da Universidade Federal do Espírito Santo está localizado na região sul do Espírito Santo e oferta 17 cursos de graduação, oito cursos de mestrado e três de doutorado.
+              </p>
+              <p>
+                Com o desmembramento do extinto Centro de Ciências Agrárias (CCA), passou a abrigar dois centros de ensino denominados Centro de Ciências Agrárias e Engenharias (CCAE) e Centro de Ciências Exatas, Naturais e da Saúde (CCENS), sendo que ambos compartilham o mesmo espaço físico, com atividades de ensino, pesquisa e extensão, em articulação com os cursos de graduação e as coordenações dos programas de pós-graduação.
+              </p>
+              <a href="https://www.ufes.br/campus-de-alegre" target="_blank">Site do Campus</a>
+            </div>
+          </article>
+      </section>
+
+      <div class="tabela_mapa">
+        <div class="tabela">
+          <table class="w3-table-all" style="width: 500px; margin: 50px auto 20px auto;">
+            <thead>
+              <tr class="w3-grey">
+                  <th colspan="2" class="w3-center">ALEGRE</th>
+                </tr>
+            </thead>
+            <tr>
+              <td>População estimada</th>
+                <td>29.869 pessoas (2021)</th>
+            </tr>
+            <tr>
+                <td>Área territorial</th>
+                <td>756,860 km²</th>
+            </tr>
+            <tr>
+                <td>IDH</th>
+              <td>0,721</th>
+            </tr>
+            <tr>
+              <td>PIB</th>
+              <td>R$ 476.962,31</th>
+            </tr>
+            <tr>
+                <td>PIB per capita</th>
+              <td>R$ 15.854,35</th>
+            </tr>
+            <tr>
+                <th colspan="2" class="w3-center">Fonte: IBGE</th>
+            </tr>
+          </table>
+        </div>
+        <div class="map" style="width: 500px; margin: 0 auto 20px auto;">
+          <iframe src="https://www.google.com/maps/embed?pb=!4v1660560306233!6m8!1m7!1s8scnUze69RxAEoB_W1m5tw!2m2!1d-20.76275252954151!2d-41.53241965622355!3f189.97451250040666!4f-4.056316765400226!5f0.7820865974627469" width="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <footer>
+        <div class="w3-container" id="contato">
+          <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black w3-round-xlarge">Informações de Contato</button>
+        
+          <div id="id01" class="w3-modal">
+            <div class="w3-modal-content w3-animate-top w3-card-4">
+              <header class="w3-container w3-teal"> 
+                <span onclick="document.getElementById('id01').style.display='none'" 
+                class="w3-button w3-display-topright">&times;</span>
+                <h2>Contato</h2>
+              </header>
+              <div class="w3-container">
+                <p>Email: fulanodetal@fulano.com</p>
+                <p>Telefone: 4002-8922</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p>&copy; Lucas Soares Silva Matias & Isabele de Lima Costa, 2022</p>
+      </footer>
+    </div>
+</body>
+</html>
